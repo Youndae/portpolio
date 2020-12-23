@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="layout">
+    <div class="navbar_button">
+        <button class="pt-nav-button" id="Main">main</button>
+        <button class="pt-nav-button" id="Project">project</button>
+        <button class="pt-nav-button" id="Skill">skill</button>
+        <button class="pt-nav-button" id="Blog">Blog</button>
+        <button class="pt-nav-button" id="Github">Github</button>
+    </div>
+    <th:block layout:fragment="content"></th:block>
+</div>
+</body>
+</html>

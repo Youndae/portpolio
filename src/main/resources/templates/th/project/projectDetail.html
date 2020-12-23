@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="th/layout/header">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="board_subject">
+        <th:block th:text="${pt.ptName}"></th:block>
+    </div>
+    <div class="board_content">
+        <th:block th:utext="${pt.ptContent}"></th:block>
+    </div>
+</div>
+</body>
+</html>

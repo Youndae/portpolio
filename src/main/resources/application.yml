@@ -1,0 +1,26 @@
+
+spring:
+  #mybatis
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/portpolio?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: 1234
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    view-names: th/*
+
+
+
+# server port
+server:
+  port: 8080
+
+#mybatis
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  type-aliases-package: com.portpolio.domain
+
