@@ -1,17 +1,34 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript" th:src="@{https://code.jquery.com/jquery-3.3.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/portpolio.js}"></script>
+<style>
+.navbar_button{
+    margin-left: 1100px;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+.pt-nav-button{
+    margin-left: 10px;
+    font-size: 20pt;
+    background-color: white;
+    border: 0;
+    outline: 0;
+}
+</style>
 </head>
 <body>
 <div class="layout">
     <div class="navbar_button">
-        <button class="pt-nav-button" id="Main">main</button>
-        <button class="pt-nav-button" id="Project">project</button>
-        <button class="pt-nav-button" id="Skill">skill</button>
-        <button class="pt-nav-button" id="Blog">Blog</button>
-        <button class="pt-nav-button" id="Github">Github</button>
+        <button class="pt-nav-button"  id="Main">main</button>
+        <button class="pt-nav-button"  id="Project">project</button>
+        <button class="pt-nav-button"  id="Skill">skill</button>
+        <button class="pt-nav-button"  id="Blog">Blog</button>
+        <button class="pt-nav-button"  id="Github">Github</button>
     </div>
     <th:block layout:fragment="content"></th:block>
 </div>
