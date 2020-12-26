@@ -10,3 +10,7 @@ SpringBoot, Gradle, mysql
 
 프로젝트 시작.
 기본 틀 작성 및 db연동.
+
+12/26
+
+CSS 작성 끝.
