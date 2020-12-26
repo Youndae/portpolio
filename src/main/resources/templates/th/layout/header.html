@@ -6,7 +6,7 @@
     <title>Title</title>
     <script type="text/javascript" th:src="@{https://code.jquery.com/jquery-3.3.1.min.js}"></script>
     <script type="text/javascript" th:src="@{/js/portpolio.js}"></script>
-<style>
+<!--<style>
 .navbar_button{
     margin-left: 1100px;
     margin-top: 20px;
@@ -19,7 +19,10 @@
     border: 0;
     outline: 0;
 }
-</style>
+</style>-->
+    <th:block layout:fragment="css">
+        <link rel="stylesheet" th:href="@{/css/portpolio.css}">
+    </th:block>
 </head>
 <body>
 <div class="layout">

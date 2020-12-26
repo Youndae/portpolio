@@ -5,15 +5,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <th:block layout:fragment="css">
+        <link rel="stylesheet" th:href="@{/css/portpolio.css}">
+    </th:block>
 </head>
 <body>
 <div layout:fragment="content">
-<div class="container">
-    <th:block th:each="list : ${ptList}">
-        <th:block th:utext="${list.ptName}"></th:block>
-        <th:block th:utext="${list.ptContent}"></th:block>
-    </th:block>
-</div>
+    <div class="project_header">
+        <h1>Project</h1>
+    </div>
+    <div class="project_layout">
+        <th:block th:each="list : ${ptList}">
+            <div class="project_List">
+                <div class="project_name_List">
+                    <h3><th:block th:utext="${list.ptName}"></th:block></h3>
+                </div>
+                <div class="project_content_List">
+                    <th:block th:utext="${list.ptContent}"></th:block>
+                </div>
+            </div>
+        </th:block>
+    </div>
 </div>
 </body>
 </html>

@@ -5,14 +5,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <th:block layout:fragment="css">
+        <link rel="stylesheet" th:href="@{/css/portpolio.css}">
+    </th:block>
 </head>
 <body>
-<div class="container">
-    <div class="skill_Title">
-        <p>Skill</p>
-    </div>
-    <div class="skill_content">
-        <p>제가 사용 가능한 기술은 자바입니다.</p>
+<div layout:fragment="content">
+    <div class="skill_header">
+        <h1>SKILL</h1>
+        <div class="Skill-List">
+            <div class="skill_Title">
+                <h3>Skill</h3>
+            </div>
+            <div class="skill_content">
+                <p>제가 사용 가능한 기술은 자바입니다.</p>
+            </div>
+        </div>
+        <div class="Skill-List">
+            <div class="skill_Title">
+                <h3>Skill</h3>
+            </div>
+            <div class="skill_content">
+                <p>제가 사용 가능한 기술은 자바입니다.</p>
+            </div>
+        </div>
+        <div class="Skill-List">
+            <div class="skill_Title">
+                <h3>Skill</h3>
+            </div>
+            <div class="skill_content">
+                <p>제가 사용 가능한 기술은 자바입니다.</p>
+            </div>
+        </div>
+
     </div>
 </div>
 </body>

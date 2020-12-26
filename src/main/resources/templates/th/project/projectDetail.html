@@ -5,14 +5,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <th:block layout:fragment="css">
+        <link rel="stylesheet" th:href="@{/css/portpolio.css}">
+    </th:block>
 </head>
 <body>
-<div class="container">
-    <div class="board_subject">
-        <th:block th:text="${pt.ptName}"></th:block>
-    </div>
-    <div class="board_content">
-        <th:block th:utext="${pt.ptContent}"></th:block>
+<div layout:fragment="content">
+    <div class="container">
+        <div class="board_subject">
+            <th:block th:text="${pt.ptName}"></th:block>
+        </div>
+        <div class="board_content">
+            <th:block th:utext="${pt.ptContent}"></th:block>
+        </div>
     </div>
 </div>
 </body>
